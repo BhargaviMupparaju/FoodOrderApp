@@ -1,12 +1,8 @@
 import classes from "./MealItemForm.module.css";
 import Input from "../../UI/Input";
-import { useRef} from "react";
+
 const MealItemForm = (props) => {
 
-	const submitHandler= (event)=>{
-		event.preventDefault();
-
-	}
 	return (
 		<form className={classes.form}>
 
