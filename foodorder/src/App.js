@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
@@ -18,7 +18,7 @@ function App() {
 	};
 
 	return (
-		<CartProvider> 
+		<CartProvider>
 			{/* Here the components inside the provider tags can access the props from the context */}
 			{cartIsShown && <Cart onClose={hideCartHandler} />}
 			<Header onShowCart={showCartHandler} />

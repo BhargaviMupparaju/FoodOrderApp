@@ -10,22 +10,21 @@ const HeaderCartButton = (props) => {
 	// For example if we add more than item in cart , we need to extract the total number of items in the cart. Instead of considering
 	// every single value, we can simple use reduce function which do sum of all cart items
 
-// // 	// const result = arr.reduce((accumulator, currentValue) => {
-// //   // d
-// //   return accumulator;
-// }, initialValue);
-
+	// // 	// const result = arr.reduce((accumulator, currentValue) => {
+	// //   // d
+	// //   return accumulator;
+	// }, initialValue);
 
 	const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
 		return curNumber + item.amount;
-	}, 0); 
+	}, 0);
 	return (
 		<button className={classes.button} onClick={props.onClick}>
 			<span className={classes.icon}>
 				<CartIcon />
 			</span>
 			<span>Your Cart</span>
-			<span className={classes.badge}>3</span>
+			<span className={classes.badge}>{numberOfCartItems}</span>
 		</button>
 	);
 };
