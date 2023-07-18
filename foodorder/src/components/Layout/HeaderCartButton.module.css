@@ -10,50 +10,50 @@
 	align-items: center;
 	border-radius: 25px;
 	font-weight: bold;
-}
-
-.button:hover,
-.button:active {
+  }
+  
+  .button:hover,
+  .button:active {
 	background-color: #2c0d00;
-}
-
-.icon {
+  }
+  
+  .icon {
 	width: 1.35rem;
 	height: 1.35rem;
 	margin-right: 0.5rem;
-}
-
-.badge {
+  }
+  
+  .badge {
 	background-color: #b94517;
 	padding: 0.25rem 1rem;
 	border-radius: 25px;
 	margin-left: 1rem;
 	font-weight: bold;
-}
-
-.button:hover .badge,
-.button:active .badge {
+  }
+  
+  .button:hover .badge,
+  .button:active .badge {
 	background-color: #92320c;
-}
-
-.bump {
+  }
+  
+  .bump {
 	animation: bump 300ms ease-out;
-}
-
-@keyframes bump {
+  }
+  
+  @keyframes bump {
 	0% {
-		transform: scale(1);
+	  transform: scale(1);
 	}
 	10% {
-		transform: scale(0.9);
+	  transform: scale(0.9);
 	}
 	30% {
-		transform: scale(1.1);
+	  transform: scale(1.1);
 	}
 	50% {
-		transform: scale(1.15);
+	  transform: scale(1.15);
 	}
 	100% {
-		transform: scale(1);
+	  transform: scale(1);
 	}
-}
+  }
